@@ -23,7 +23,6 @@ It runs **offline** for local development.
 
 1. Clone the repository:
 
-```bash
 git clone <repo-url>
 cd email-service
 
