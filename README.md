@@ -23,33 +23,36 @@ It runs **offline** for local development.
 
 1. Clone the repository:
 
-git clone <repo-url>
-cd email-service
+  git clone <repo-url>
+  cd email-service
 
 2. Install dependencies:
 
-npm install
+  npm install
 
 3. (Optional) Setup environment variables if you integrate a real email service:
 
-Create a .env file in the project root:
+  Create a .env file in the project root:
 
-EMAIL_USER=youremail@gmail.com
-EMAIL_PASS=yourapppassword
+    EMAIL_USER=youremail@gmail.com
+    EMAIL_PASS=yourapppassword
 
 
 ⚠️ Make sure “Less Secure Apps” is off and use an App Password if 2FA is enabled on Gmail.
 
-▶️ Run Offline
-serverless offline
+---
+
+## ▶️ Run Offline
+  serverless offline
 
 
 The API will start at:
+  http://localhost:3000/send
 
-http://localhost:3000/send
+---
 
 
-📮 Example Request (cURL)
+## 📮 Example Request (cURL)
 curl -X POST http://localhost:3000/send \
 -H "Content-Type: application/json" \
 -d '{
